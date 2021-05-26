@@ -21,6 +21,7 @@
             }
             .texto-right{
                 display: flex;
+                /* flex-direction: column; */
                 justify-content: space-between;
             }
         </style>
@@ -51,13 +52,22 @@
                 </div>
             
                 <div class="mt-8 md:border-t border-gray-200 dark:border-gray-700 overflow-hidden shadow sm:rounded-lg">
-                    <div class="grid grid-cols-1 md:grid-cols-2 ">
+                    <div class="">
                         <div class="p-6 ">
                             <h2>Alumnos:</h2>
                             <div>
-                                <p>Guillermo Enrique Martinez Figueroa <span class=".texto-right">MF17006</span></p>
-                                <p>Elmer Eduardo Interiano Estrada</p>
-                                <p>Christian Alexander Oliva Maravilla</p>
+                                <span class="texto-right">
+                                    <p>Guillermo Enrique Martinez Figueroa </p>
+                                    <p>MF17006</p>
+                                </span>
+                                <span class="texto-right">
+                                    <p>Elmer Eduardo Interiano Estrada</p>
+                                    <p>IE18001</p>
+                                </span>
+                                <span class="texto-right">
+                                    <p>Christian Alexander Oliva Maravilla</p>
+                                    <p>OM 18003</p>
+                                </span>
                             </div>
                         </div>   
                     </div>
