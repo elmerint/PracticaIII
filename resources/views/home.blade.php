@@ -27,7 +27,7 @@
                                 <option value="">Pantalon</option>
                                 <option value="">Calcetines</option>
                             </select>
-                                @error('name')
+                                @error('nombre_venta')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
