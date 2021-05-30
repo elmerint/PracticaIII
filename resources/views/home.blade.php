@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -91,7 +92,9 @@
                             @enderror
                         </div>
                     </div>
-
+                    <div class="text-right">
+                        <button type="button" class="btn btn-success ">Comprar</button>
+                    </div>
                     </form>
                     
                 </div>
