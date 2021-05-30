@@ -21,11 +21,12 @@
                         <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Selecciona una opcion: ') }}</label>
 
                         <div class="col-md-6">
-                            <select id="nombre_venta" type="select" onchange="ShowSelected();" class="form-control @error('nombre_venta') is-invalid @enderror" name="nombre_venta" value="{{ old('nombre_venta') }}" required autocomplete="nombre_venta" autofocus> 
-                                <option value"">Camisa</option>
-                                <option value="">Short</option>
-                                <option value="">Pantalon</option>
-                                <option value="">Calcetines</option>
+                            <select  id="nombre_venta" type="select" onchange="ShowSelected();" class="form-control @error('nombre_venta') is-invalid @enderror" name="nombre_venta" value="{{ old('nombre_venta') }}" required autocomplete="nombre_venta" autofocus> 
+                                <option disabled="" selected="">Elija un producto</option>
+                                <option >Camisa</option>
+                                <option >Short</option>
+                                <option >Pantalon</option>
+                                <option >Calcetines</option>
                             </select>
                                 @error('nombre_venta')
                                 <span class="invalid-feedback" role="alert">
@@ -50,24 +51,24 @@
                                 var cod = document.getElementById("nombre_venta").value;
                                 
                                if(cod === 'Camisa'){
-                                   precioQ.classList.remove('price');
+                                   precioQ.classList.remove('.price');
                                    precioQ.textContent = '20';
                                    precioQ.classList.add('.price');
                                    document.querySelector('#precio').appendChild(precioQ);
                                 } else if(cod === 'Short'){
-                                  precioQ.classList.remove('price');
+                                  precioQ.classList.remove('.price');
                                    precioQ.textContent = '30';
                                    precioQ.classList.add('.price');
                                    document.querySelector('#precio').appendChild(precioQ);
 
                                 } else if (cod === 'Calcetines'){
-                                 precioQ.classList.remove('price');
+                                 precioQ.classList.remove('.price');
                                    precioQ.textContent = '5';
                                    precioQ.classList.add('.price');
                                    document.querySelector('#precio').appendChild(precioQ);
 
                                 } else if (cod === 'Pantalon'){
-                                 precioQ.classList.remove('price');
+                                 precioQ.classList.remove('.price');
                                    precioQ.textContent = '50';
                                    precioQ.classList.add('.price');
                                    document.querySelector('#precio').appendChild(precioQ);
