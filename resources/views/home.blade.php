@@ -7,16 +7,18 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Sistema de ventas:') }}</div>
-
+                
                 <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                         </div>
                     @endif
+                    
+                    
 
                     {{ __('Llena los siguientes campos a continuacion:') }}
-                    <form method="POST" action="{{ route('home') }}">
+                    <form method="POST" action="{{ route('venta.request') }}">
                     @csrf
                     <div class="form-group row">
                         <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Selecciona una opcion: ') }}</label>
@@ -40,52 +42,11 @@
                     <div class="form-group row">
                         <label for="precio" class="col-md-4 col-form-label text-md-right">{{ __('Precio: $') }}</label>
 
-                        <div id = "precioD" class="col-md-6">
-                            <label id="precio" type="label" class="price form-control @error('precio') is-invalid @enderror" name="precio" value="{{ old('precio') }}" required autocomplete="precio" autofocus> 
+                        <div class="col-md-6">
+                            <input id="precio" class="precio form-control @error('precio') is-invalid @enderror" name="precio" value="{{ old('precio') }}" required autocomplete="precio" autofocus> 
                            
-                           <script type="text/javascript">
-                                function ShowSelected(){
-                                
-                                const precioQ = document.querySelector('.price')
-                                    /* Para obtener el valor */
-                                
-                                var cod = document.getElementById("nombre_venta").value;
-                                
-                               if(cod === 'Camisa'){
-                                   precioQ.classList.remove('.price');
-                                   precioQ.textContent = '20';
-                                   precioQ.classList.add('.price');
-                                   document.querySelector('#precio').appendChild(precioQ);
-                                } else if(cod === 'Short'){
-                                  precioQ.classList.remove('.price');
-                                   precioQ.textContent = '30';
-                                   precioQ.classList.add('.price');
-                                   document.querySelector('#precio').appendChild(precioQ);
-
-                                } else if (cod === 'Calcetines'){
-                                 precioQ.classList.remove('.price');
-                                   precioQ.textContent = '5';
-                                   precioQ.classList.add('.price');
-                                   document.querySelector('#precio').appendChild(precioQ);
-
-                                } else if (cod === 'Pantalon'){
-                                 precioQ.classList.remove('.price');
-                                   precioQ.textContent = '50';
-                                   precioQ.classList.add('.price');
-                                   document.querySelector('#precio').appendChild(precioQ);
-                                }
-                               
-                                
-                                /* Para obtener el texto */
-                                var combo = document.getElementById("nombre_venta");
-                                var selected = combo.options[combo.selectedIndex].text;
-                                //alert(selected);
-                                  
-                            }
-                            </script>
-
-                            </label>
-                                @error('nombre_venta')
+                        </input>
+                                @error('precio')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>

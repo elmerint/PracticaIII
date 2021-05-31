@@ -17,11 +17,11 @@ class CreateVentasTable extends Migration
             $table->id();
             $table->string('nombre_venta');
             $table->float('precio');
-            $table->unsignedBigInteger('users_id');
-            $table->foreign('users_id')
-                ->references('id')
-                ->on('users')
-                ->onDelete('cascade');
+           // $table->unsignedBigInteger('users_id');
+           // $table->foreign('users_id')
+            //  ->references('id')
+               // ->on('users')
+               // ->onDelete('cascade');
             $table->timestamps();
 
         });
