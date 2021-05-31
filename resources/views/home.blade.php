@@ -93,7 +93,7 @@
                         </div>
                     </div>
                     <div class="text-right">
-                        <button type="button" class="btn btn-success ">Comprar</button>
+                        <button type="submit" class="btn btn-success ">Comprar</button>
                     </div>
                     </form>
                     
