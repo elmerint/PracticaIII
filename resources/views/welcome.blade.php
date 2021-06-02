@@ -57,22 +57,23 @@
                             <h2>Alumnos:</h2>
                             <div>
                                 <span class="texto-right">
-                                    <p>Guillermo Enrique Martinez Figueroa </p>
+                                    <p>Interiano Estrada, Elmer Eduardo</p>
+                                    <p>IE18001</p>
+                                    
+                                </span>
+                                <span class="texto-right">
+                                    <p>Martinez Figueroa, Guillermo Enrique </p>
                                     <p>MF17006</p>
                                 </span>
                                 <span class="texto-right">
-                                    <p>Elmer Eduardo Interiano Estrada</p>
-                                    <p>IE18001</p>
-                                </span>
-                                <span class="texto-right">
-                                    <p>Christian Alexander Oliva Maravilla</p>
-                                    <p>OM 18003</p>
+                                    <p>Oliva Maravilla, Christian Alexander</p>
+                                    <p>OM18003</p>
                                 </span>
                             </div>
                         </div>   
                     </div>
                     <div class="border-t text-gray-900 text-center">
-                        <p>Tarea Correspondiente a la Unidad 3 de Técnicas de Programación de Internet</p>
+                        <p>Práctica Correspondiente a la Unidad 3 de Técnicas de Programación de Internet (TPI)</p>
                     </div>
                 </div>
             
